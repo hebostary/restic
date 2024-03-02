@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "label": "go: build restic(debug)",
+            "type": "shell",
+            "command": "/usr/bin/go",
+            "args": [
+                /*
+                "run",
+                "build.go",
+                "-tags",
+                "debug",
+                "-o",
+                "/home/dev/workspace/restic",
+                "-v",
+                */
+                //
+                "build",
+                "-gcflags=all=-N -l",
+                "-o",
+                //"/home/dev/workspace/restic",
+                "/home/dev/workspace/github/restic/restic/restic",
+                "-mod",
+                "mod",
+                "/home/dev/workspace/github/restic/restic/cmd/restic/*.go"
+                //      
+            ],
+            "options": {
+                "cwd": "/home/dev/workspace/github/restic/restic/cmd/restic"
+                //"cwd": "/home/dev/workspace/github/restic/restic"
+            },
+        }
+    ]
+}
