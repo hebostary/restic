@@ -9,17 +9,17 @@
             "type": "go",
             "request": "launch",
             "mode": "exec",
-            "asRoot": true,
+            //"asRoot": true,
             "console": "integratedTerminal",
             "dlvFlags": ["--check-go-version=false"],
-            "program": "/home/dev/workspace/github/restic/restic/restic",
+            "program": "/home/hunk/workspace/src/github.com/restic/restic/restic",
             //"program": "/home/dev/workspace/restic",
             "args": [
                 "--repo",
-                "/home/dev/restic/repo1",
+                "/home/hunk/restic/repo1",
                 "--verbose",
                 "backup",
-                "/home/dev/tmp"
+                "/home/hunk/tmp"
             ],
             "preLaunchTask": "go: build restic(debug)",
         }

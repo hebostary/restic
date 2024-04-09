@@ -19,15 +19,15 @@
                 "-gcflags=all=-N -l",
                 "-o",
                 //"/home/dev/workspace/restic",
-                "/home/dev/workspace/github/restic/restic/restic",
+                "/home/hunk/workspace/src/github.com/restic/restic/restic",
                 "-mod",
                 "mod",
-                "/home/dev/workspace/github/restic/restic/cmd/restic/*.go"
+                "/home/hunk/workspace/src/github.com/restic/restic/cmd/restic/*.go"
                 //      
             ],
             "options": {
-                "cwd": "/home/dev/workspace/github/restic/restic/cmd/restic"
-                //"cwd": "/home/dev/workspace/github/restic/restic"
+                "cwd": "/home/hunk/workspace/src/github.com/restic/restic/cmd/restic"
+                //"cwd": "/home/hunk/workspace/src/github.com/restic/restic"
             },
         }
     ]
